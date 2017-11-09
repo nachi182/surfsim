@@ -1,0 +1,11 @@
+#PBS -l nodes=5:ppn=1
+#PBS -l mem=5gb
+#PBS -l walltime=00:99:00:00
+#PBS -q force-6
+#PBS -m abe
+#PBS -M nbrown46@gatech.edu
+
+cd $PBS_O_WORKDIR
+./qecsim
+
+

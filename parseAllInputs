@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd in
+for exptdir in `ls -d */`
+do
+    cd $exptdir
+    rm -f input*
+    for file in `ls *`
+    do
+        ../../parseInput $file >> input
+    done
+    cd ..
+done
